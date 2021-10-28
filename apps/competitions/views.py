@@ -126,11 +126,3 @@ def pdfView(request,c_id):
         data = {'competition':competition,'heats':heats,'url':FEDACHI_LOGO}
         pdf = renderPDF(templates[competition.type()],data)
         return HttpResponse(pdf,content_type='application/pdf')
-
-"""
-VPS:	Aplicación
-Usuario:	guru 
-IP Pública IPv4:	45.173.130.126
-IP Pública IPv6:	2803:d860:de4a::17c
-Password:	CJxPz7ABd98nSg8
-"""
